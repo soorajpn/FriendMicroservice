@@ -11,11 +11,10 @@ import org.springframework.stereotype.Service;
 import com.illud.friends.domain.User;
 import com.illud.friends.repository.UserRepository;
 import com.illud.friends.service.UserService;
-import com.illud.friends.we.rest.UserController;
 @Service
 public class UserServiceImpl implements UserService{
 	
-	private final Logger log = LoggerFactory.getLogger(UserController.class);
+	private final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 	@Autowired
 	private  UserRepository userRepo;
 	//create an new user 

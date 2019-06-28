@@ -1,8 +1,9 @@
-package com.illud.friends.we.rest;
+package com.illud.friends.web.rest;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,7 @@ import com.illud.friends.domain.User;
 import com.illud.friends.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+@CrossOrigin
 @RestController
 @RequestMapping("/apis")
 public class UserController {
